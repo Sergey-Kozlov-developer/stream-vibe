@@ -6,6 +6,7 @@
 -   ⚔️ Стек технологий, которые я использую в этом проекте:
     -   **[Minista](https://minista.qranoko.jp/), JS, SCSS, БЭМ, Vite**
 -   Minista новый для меня инструмент. Это **SSG** инструмент с JSX-шаблонизатором
+-   Ссылка на макет [Figma](https://www.figma.com/design/uIo0pJQqAJCvSyyPQonMZQ)
 -   Только верстка на нативе
 -   если у Вас есть обратная связь по проекту, то прошу написать мне в [Telegram](https://t.me/vmfsergeikozlov)
 

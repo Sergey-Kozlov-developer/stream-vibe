@@ -1,6 +1,7 @@
 import './Header.scss'
 import Logo from "@/components/Logo/Logo.jsx";
 import classNames from "classnames";
+import Button from "@/components/Button/index.js";
 
 export default (props) => {
     // url для использования isActive
@@ -42,6 +43,10 @@ export default (props) => {
                         }
                     </ul>
                 </nav>
+                <div className="header__actions">
+                    <Button className='header__button' />
+                    <Button href='/'/>
+                </div>
             </div>
         </header>
     )

@@ -50,15 +50,19 @@
                 color: var(--color-white);
                 background-color: var(--color-red-60);
             }
-        }
-        &.is-active {
-            font-weight: 500;
-            color: var(--color-white);
-            background-color: var(--color-black-10);
-            pointer-events: none;
+            &.is-active {
+                font-weight: 500;
+                color: var(--color-white);
+                background-color: var(--color-black-10);
+                pointer-events: none;
+            }
         }
     }
 
-
+    &__actions {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+    }
 }
 

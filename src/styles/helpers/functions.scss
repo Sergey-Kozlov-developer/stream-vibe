@@ -1,6 +1,8 @@
 @use 'constants' as *;
 @use 'sass:math';
 
+// fluid плавно изменяет значение
+// пропорционально от desktop-ширины до mobile
 @function fluid($max: 100, $min: 10, $isEndOfLaptop: false) {
 	$maxViewportWidth: $container-desktop-width;
 	$minViewportWidth: 390;
@@ -23,7 +25,8 @@
 		#{$maxSize * 1rem}
 	);
 }
-
+// fluid-to-laptop изменяет значение лишь в диапазоне от desktop до laptop
+// и далее (вплоть до mobile ширины) значение остаётся неизменным
 @function fluid-to-laptop($max: 100, $min: 10) {
 	@return fluid($max, $min, true)
 }
