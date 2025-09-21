@@ -44,8 +44,21 @@ export default (props) => {
                     </ul>
                 </nav>
                 <div className="header__actions">
-                    <Button className='header__button' />
-                    <Button href='/'/>
+                    <Button
+                        label="Search"
+                        isLabelHidden
+                        mode='transparent'
+                        iconName="search"
+                        className='header__button'
+                    />
+                    <Button
+                        label="Notificaations"
+                        isLabelHidden
+                        mode='transparent'
+                        iconName="notification"
+                        className='header__button'
+
+                    />
                 </div>
             </div>
         </header>
