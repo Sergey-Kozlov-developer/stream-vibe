@@ -1,5 +1,6 @@
 class OverlayMenu {
     // css селекторы к нужным элементам разметки
+    //  данном случае это data трибуты
     selectors = {
         root: '[data-js-overlay-menu]',
         dialog: '[data-js-overlay-menu-dialog]',
