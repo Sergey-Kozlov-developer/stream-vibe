@@ -6,7 +6,7 @@ import Footer from "@/layouts/Footer/Footer";
 
 export default function (props) {
 	// url для использования isActive
-	const { children, title, url } = props;
+	const { children, title, url, isHeaderFixed } = props;
 	return (
 		<>
 			<Head htmlAttributes={{ lang: "en" }}>
@@ -31,7 +31,7 @@ export default function (props) {
 				/>
 				<link rel="manifest" href="/site.webmanifest" />
 			</Head>
-			<Header url={url} />
+			<Header url={url} isFixed={isHeaderFixed} />
 			<Content>{children}</Content>
 			<Footer />
 		</>

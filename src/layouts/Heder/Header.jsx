@@ -6,7 +6,7 @@ import BurgerButton from "@/components/BurgerButton/index.js";
 
 export default (props) => {
 	// url для использования isActive
-	const { url } = props;
+	const { url, isFixed } = props;
 
 	const menuItems = [
 		{
@@ -33,7 +33,12 @@ export default (props) => {
 			: "";
 
 	return (
-		<header className="header" data-js-overlay-menu="">
+		<header
+			className={classNames("header", {
+				"is-fixed": isFixed,
+			})}
+			data-js-overlay-menu=""
+		>
 			<div className="header__inner container">
 				<Logo className="header__logo" loading="eager" />
 				<dialog
