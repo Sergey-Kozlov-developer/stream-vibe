@@ -651,7 +651,7 @@ a[class] {
 	padding-top: clamp(9.375rem, 8.4684917355rem + 3.7190082645vw, 12.1875rem);
 	padding-bottom: clamp(3.125rem, 1.493285124rem + 6.694214876vw, 8.1875rem);
 	background: var(--heroGradientTop), var(--heroGradientBottom),
-		url(./assets/images/bg.png) 50% / cover;
+		url(./images/bg.png) 50% / cover;
 	background-repeat: no-repeat;
 }
 .hero__play-button {
