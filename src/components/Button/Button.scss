@@ -28,11 +28,14 @@
         pointer-events: none;
     }
 
+    // кнопки которые принимают иконку содержат или не содержать
+    // модификатор, будут менять свои размеры от 56px до 44px
     &:has(.button__icon:only-child) {
+        @include square(fluid-to-laptop(56, 44));
         padding: 0;
 
     }
-    // если модификатор
+    // если модификатор transparent
     &--transparent {
         background-color: transparent;
         // если button__icon единственный дочерним элементов
@@ -45,4 +48,11 @@
             }
         }
     }
+
+    // если модификатор black-10
+    &--black-10 {
+        background-color: var(--color-black-10);
+        border: var(--border);
+    }
+
 }

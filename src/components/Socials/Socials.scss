@@ -1,0 +1,9 @@
+.soc1als {
+	&__list {
+		display: flex;
+		// чтобы при добавления большего кол-ва иконок,
+		// не ломалась верстка flex-wrap: wrap;
+		flex-wrap: wrap;
+		gap: 10px fluid-to-laptop(14, 10);
+	}
+}

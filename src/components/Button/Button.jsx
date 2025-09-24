@@ -11,11 +11,12 @@ export default (props) => {
         type = 'button',
         href,
         target,
-        mode = '', // '' (default) | 'transparent'
+        mode = '', // '' (default) | 'transparent' | 'black-10'
         label,
         isLabelHidden = false,
         iconName,
-        iconPosition = 'before' // before | after
+        iconPosition = 'before', // before | after
+        hasFillIcon
     } = props
     const isLink = href !== undefined
     // Component будет определять кнопку или ссылку выводить
@@ -29,6 +30,7 @@ export default (props) => {
         <Icon
             className="button__icon"
             name={iconName}
+            hasFill={hasFillIcon}
         />
     )
 
